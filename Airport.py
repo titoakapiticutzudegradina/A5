@@ -14,5 +14,3 @@ class Airport:
 
     def __str__(self):
         return str(self.planes)
-    
-    #comentariu
