@@ -28,7 +28,7 @@ class Passenger:
         self.__passportNr = passportNr
 
     def __str__(self):
-        return "(Passenger: " + Fore.LIGHTMAGENTA_EX + self.__firstName + Style.RESET_ALL + " " + Fore.LIGHTMAGENTA_EX + self.__lastName + Style.RESET_ALL + ", PassportNr: " + Fore.LIGHTBLUE_EX + str(self.__passportNr) + Style.RESET_ALL + ")"
+        return "(" + Fore.LIGHTMAGENTA_EX + self.__firstName + Style.RESET_ALL + " " + Fore.LIGHTMAGENTA_EX + self.__lastName + Style.RESET_ALL + ", "+ Fore.LIGHTBLUE_EX + str(self.__passportNr) + Style.RESET_ALL + ")"
     def __repr__(self):
         return str(self)
     
