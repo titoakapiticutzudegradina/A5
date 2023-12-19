@@ -26,6 +26,12 @@ class Airport:
         for plane in self.__planes:
             print(plane)
 
+    #Print passengers from a given plane
+    #Input: plane
+    #Output: -
+    def printPassengers(self, plane_name):
+        pass
+
     #Add a plane to the list of planes
     #Input: name, company, seats, destinations
     #Output: -

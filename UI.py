@@ -24,6 +24,7 @@ def menu():
     print("14. Identify plane/planes where rhere is a passenger with a given name")
     print("15. Show a number of passengers from a plane with different last names")
     print("16. Show a number of planes with the same destination, but from different companies")
+    print("17. Show the passenger list from a given plane")
     print(Style.RESET_ALL)
 
 airport = Airport()
@@ -71,6 +72,13 @@ def UI():
                     print(Fore.GREEN + "The passenger has been added successfully!" + Style.RESET_ALL)
                 else:
                     system("cls || clear")
+            elif option == 17:
+                system("cls || clear")
+                print(Fore.LIGHTGREEN_EX + "You have chosen to show the passenger list from a given plane" + Style.RESET_ALL)
+                print(Fore.LIGHTCYAN_EX + "The current list of planes is: \n " + Style.RESET_ALL + str(airport.planes))
+                print()
+                plane = int(input(Fore.LIGHTBLUE_EX + "Please, Master, enter the name of the plane : " + Style.RESET_ALL))
+                print(Fore.LIGHTCYAN_EX + "The current list of passengers is: \n " + Style.RESET_ALL + str(airport.planes[plane].passengers)) 
     except Exception as e:
         print(e)
         sleep(2)

@@ -106,7 +106,7 @@ class Plane:
             return ve
         
     def __str__(self):
-        return "Plane: " + Fore.LIGHTMAGENTA_EX + self.__name + Style.RESET_ALL + ", Company: " + Fore.LIGHTBLUE_EX + self.__company + Style.RESET_ALL + ", Seats: " + Fore.LIGHTBLUE_EX + str(self.__seats) + Style.RESET_ALL + ", Destination:" + Fore.LIGHTBLUE_EX + self.__destination + Style.RESET_ALL +"\n"+ "Passengers: " + str(self.__passengers)+"\n"
+        return "Plane: " + Fore.LIGHTMAGENTA_EX + self.__name + Style.RESET_ALL + ", Company: " + Fore.LIGHTBLUE_EX + self.__company + Style.RESET_ALL + ", Seats: " + Fore.LIGHTBLUE_EX + str(self.__seats) + Style.RESET_ALL + ", Destination:" + Fore.LIGHTBLUE_EX + self.__destination + Style.RESET_ALL +"\n"
     def __repr__(self):
         return str(self)
     
